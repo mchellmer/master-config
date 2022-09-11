@@ -1,0 +1,12 @@
+---
+- name: master config
+  hosts: localhost
+  tasks:
+  - name: install lvm docker config
+    template:
+      src: daemon.json
+      dest: /etc/docker/daemon.json
+    become: yes
+  - name: restart docker
+    service:
+      starte: restarted
