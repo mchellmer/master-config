@@ -23,6 +23,10 @@ echo \
 apt-get update
 apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
+# perms
+usermod -aG docker ubuntu
+cat /etc/group | grep docker
+
 # start service and test
 service docker start
 docker run hello-world
