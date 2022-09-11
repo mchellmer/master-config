@@ -21,7 +21,7 @@ echo \
 
 # install
 apt-get update
-apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 # start service and test
 service docker start
