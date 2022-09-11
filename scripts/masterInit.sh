@@ -30,3 +30,11 @@ cat /etc/group | grep docker
 # start service and test
 service docker start
 docker run hello-world
+
+########################## ansible ##########################
+# install deps
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py --user
+
+# pip install
+python3 -m pip install --user ansible
