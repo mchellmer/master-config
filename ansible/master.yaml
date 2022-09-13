@@ -2,6 +2,11 @@
 - name: master config
   hosts: localhost
   tasks:
+  - name: Install a list of packages
+    apt:
+      pkg:
+      - lvm2
+      - device-mapper-persistent-data
   - name: install lvm docker config
     template:
       src: daemon.json
