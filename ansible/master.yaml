@@ -6,7 +6,7 @@
     apt:
       pkg:
       - lvm2
-      - device-mapper-persistent-data
+      - thin-provisioning-tools
   - name: install lvm docker config
     template:
       src: daemon.json
