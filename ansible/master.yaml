@@ -15,4 +15,4 @@
     become: yes
   - name: restart docker
     service:
-      starte: restarted
+      state: restarted
