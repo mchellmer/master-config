@@ -7,6 +7,7 @@
       pkg:
       - lvm2
       - thin-provisioning-tools
+    become: yes
   - name: install lvm docker config
     template:
       src: daemon.json
